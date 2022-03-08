@@ -29,6 +29,7 @@ public class SetBoundary : MonoBehaviour
         LeftCheck();
         RightCheck();
     }
+    //Ray Casting in all dirextions(forward,backward,left,right)
     private void ForwardCheck()
     {
         Vector3 direction = Vector3.down;

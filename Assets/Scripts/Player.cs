@@ -19,6 +19,7 @@ public class Player : MonoBehaviour
     {
         Movement();
     }
+    //Player Moves and fill its area
     private void Movement()
     {
         if (Input.GetKeyDown(KeyCode.UpArrow) && bound.forwardMove==true)
@@ -46,6 +47,7 @@ public class Player : MonoBehaviour
             gamemanager.GridFill(1);
         }
     }
+    //Player Live reduced when collide with enemy
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))

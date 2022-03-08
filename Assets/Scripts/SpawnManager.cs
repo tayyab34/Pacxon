@@ -21,6 +21,7 @@ public class SpawnManager : MonoBehaviour
     {
         
     }
+    //Enemy Spawning
     private void SpawnEnemy()
     {
         Vector3 position = new Vector3(Random.Range(0, XRange), transform.position.y, transform.position.z);

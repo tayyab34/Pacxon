@@ -22,6 +22,7 @@ public class GameMnager : MonoBehaviour
     {
         
     }
+    //Player level completed when grid 70% Fill
     public void GridFill(int value)
     {
         Gridfill += value;
@@ -30,6 +31,7 @@ public class GameMnager : MonoBehaviour
             Debug.Log("Player Completed the Level");
         }
     }
+    //Add Lives
     public void Lives(int livestoadd)
     {
         lives += livestoadd;
@@ -39,6 +41,7 @@ public class GameMnager : MonoBehaviour
             Debug.Log("Game Over");
         }
     }
+    //Timer
     IEnumerator Timer()
     {
         while (true)

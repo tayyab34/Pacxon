@@ -12,7 +12,7 @@ public class EnemyMovement : MonoBehaviour
         player = GameObject.Find("Player").GetComponent<Player>();
     }
 
-    // Update is called once per frame
+    //Enemy following Player
     void Update()
     {
         Vector3 LookDirection = (player.transform.position - transform.position).normalized;

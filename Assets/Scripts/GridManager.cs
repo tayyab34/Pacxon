@@ -20,6 +20,7 @@ public class GridManager : MonoBehaviour
     {
         
     }
+    //Grid Spawning
     private void SpawnManager()
     {
         for (int i = 0; i < row; i++)
